@@ -28,11 +28,11 @@
         var userData = [];
         var numUsers = parseInt(prompt("Enter the number of users:"));
         for (var i = 0; i < numUsers; i++) {
+            var index = prompt("Enter index for user " + (i + 1) );
             var name = prompt("Enter name for user " + (i + 1) );
-            var father = prompt("Enter index for user " + (i + 1) );
             var academic = prompt("Enter academic qualification for user " + (i + 1) );
             var grade = prompt("Enter grade for user " + (i + 1) );
-            var userArray = [name, father, academic, grade];
+            var userArray = [index, name, academic, grade];
             userData.push(userArray);
         }
         for (var a = 0; a < userData.length; a++) {
